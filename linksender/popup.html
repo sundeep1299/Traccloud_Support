@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Copy Extension</title>
+  <style>
+    body {
+      width: 400px;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      border-radius: 30px;
+      background: linear-gradient(45deg, #FFD700, #FF8C00, #82E0AA, #73C6B6, #2980B9, #9B59B6, #C0392B);
+      background-size: 400% 400%;
+      animation: gradientFlow 20s ease infinite;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    @keyframes gradientFlow {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    #copyButton1 {
+      background-color: #4CAF50; /* Green */
+      color: white;
+    }
+
+    #copyButton2 {
+      background-color: #008CBA; /* Blue */
+      color: white;
+    }
+
+    button {
+      margin-top: 10px;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <p id="text">Hello, Welcome to Academic Support Network. To visit the virtual tutoring center. Please join the session using the following link: </p>
+  <button id="copyButton1">Copy text</button>
+  <p id="link2">https://asu.zoom.us/j/89720501931#success</p>
+  <button id="copyButton2">Copy Link</button>
+  <script src="popup.js"></script>
+</body>
+</html>
